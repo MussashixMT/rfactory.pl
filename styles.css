@@ -24,7 +24,7 @@ header {
 }
 
 header .logo {
-    max-width: 500px; /* Zwiększamy maksymalny rozmiar logo */
+    max-width: 800px; /* Zwiększamy maksymalny rozmiar logo */
     height: auto;
 }
 
