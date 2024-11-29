@@ -1,35 +1,42 @@
+/* Ogólne ustawienia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Globalne ustawienia */
 body {
     font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
     background: url('japanese-background.jpg') no-repeat center center fixed;
     background-size: cover;
-    margin: 0;
-    padding: 0;
     color: #333;
 }
 
-/* Nagłówek z logo */
-.header-logo {
-    text-align: center;
+/* Nagłówek */
+header {
+    background-color: #222;
     padding: 20px;
-    background-color: #222; /* Możemy zmienić na coś cieplejszego */
+    text-align: center;
 }
 
-.logo {
+header .logo {
     max-width: 300px;
     height: auto;
 }
 
-/* Sekcja z punktami */
+/* Sekcja z napisem (RAL 1023) */
 .intro {
+    background-color: #f5c400;
     text-align: center;
-    padding: 30px;
-    background-color: #f5c400; /* Kolor RAL 1023 */
+    padding: 40px 20px;
     color: black;
 }
 
 .intro h2 {
     font-size: 22px;
+    font-weight: bold;
     margin: 10px 0;
 }
 
@@ -59,30 +66,44 @@ body {
 
 /* Kontakt */
 .contact {
+    background-color: #fff;
+    padding: 40px 20px;
     text-align: center;
-    padding: 30px;
 }
 
 .contact h2 {
     font-size: 30px;
+    font-weight: bold;
+    color: #222;
     margin-bottom: 20px;
-}
-
-.contact p {
-    font-size: 18px;
-    margin: 10px 0;
 }
 
 /* Media społecznościowe */
 .socials {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
     text-align: center;
+}
+
+.socials h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.6);
-    color: white;
 }
 
 .social-links a {
+    font-size: 18px;
+    margin: 10px 20px;
+    color: #fff;
+    text-decoration: none;
     margin: 0 15px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
 }
 
 .social-links img {
@@ -93,19 +114,20 @@ body {
 /* Mapa */
 .map {
     text-align: center;
-    padding: 30px;
+    padding: 40px 20px;
 }
 
 .map iframe {
     width: 80%;
-    max-width: 600px;
+    max-width: 800px;
     height: 450px;
 }
 
 /* Stopka */
 footer {
     text-align: center;
+    padding: 20px;
     background-color: #222;
-    color: white;
-    padding: 10px;
+    color: #fff;
+    font-size: 14px;
 }
