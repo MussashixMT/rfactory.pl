@@ -1,53 +1,70 @@
-/* Ogólne ustawienia */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Globalne ustawienia */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
+    background: url('japanese-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
     color: #333;
 }
 
-/* Nagłówek */
-header {
+/* Nagłówek z logo */
+.header-logo {
     text-align: center;
     padding: 20px;
-    background-color: #222;
+    background-color: #222; /* Możemy zmienić na coś cieplejszego */
 }
 
-header .logo {
-    max-width: 100%;
+.logo {
+    max-width: 300px;
     height: auto;
 }
 
-/* Sekcja z napisem (RAL 1023) */
+/* Sekcja z punktami */
 .intro {
-    background-color: #f5c400;
     text-align: center;
-    padding: 40px 20px;
+    padding: 30px;
+    background-color: #f5c400; /* Kolor RAL 1023 */
+    color: black;
 }
 
 .intro h2 {
-    font-size: 24px;
-    color: #000;
-    font-weight: bold;
+    font-size: 22px;
     margin: 10px 0;
+}
+
+/* Galeria */
+.gallery {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.gallery h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-images img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Kontakt */
 .contact {
-    background-color: #fff;
-    padding: 40px 20px;
     text-align: center;
+    padding: 30px;
 }
 
 .contact h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #222;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
@@ -58,46 +75,37 @@ header .logo {
 
 /* Media społecznościowe */
 .socials {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 20px;
     text-align: center;
-}
-
-.socials h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
 }
 
 .social-links a {
-    font-size: 18px;
-    margin: 10px 20px;
-    color: #fff;
-    text-decoration: none;
+    margin: 0 15px;
 }
 
-.social-links a:hover {
-    text-decoration: underline;
+.social-links img {
+    width: 40px;
+    height: auto;
 }
 
 /* Mapa */
 .map {
     text-align: center;
-    padding: 40px 20px;
+    padding: 30px;
 }
 
 .map iframe {
     width: 80%;
-    max-width: 800px;
+    max-width: 600px;
     height: 450px;
 }
 
 /* Stopka */
 footer {
     text-align: center;
-    padding: 20px;
     background-color: #222;
-    color: #fff;
-    font-size: 14px;
+    color: white;
+    padding: 10px;
 }
