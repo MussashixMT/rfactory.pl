@@ -155,9 +155,12 @@ header .logo {
     display: flex;
     justify-content: center;
     gap: 20px;
+    align-items: center; /* Wyśrodkowanie elementów w pionie */
 }
 
 .social-links a {
+    display: flex;
+    align-items: center; /* Wyrównanie ikonki i tekstu w pionie */
     font-size: 18px;
     color: #fff;
     text-decoration: none;
@@ -170,6 +173,12 @@ header .logo {
 .social-links img {
     width: 40px;
     height: auto;
+    margin-right: 10px; /* Odstęp między ikoną a tekstem */
+}
+
+.social-links span {
+    font-size: 18px; /* Dopasowanie rozmiaru tekstu */
+    font-weight: bold;
 }
 
 /* Mapa */
