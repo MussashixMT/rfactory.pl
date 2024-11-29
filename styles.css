@@ -11,10 +11,12 @@ body {
     background-color: #f8f8f8;
     background: url('japanese-background.jpg') no-repeat center center fixed;
     background-size: cover;
+    margin: 0;
+    padding: 0;
     color: #333;
 }
 
-/* Nagłówek */
+/* Nagłówek z logo */
 header {
     background-color: #222;
     padding: 20px;
@@ -28,7 +30,7 @@ header .logo {
 
 /* Sekcja z napisem (RAL 1023) */
 .intro {
-    background-color: #f5c400;
+    background-color: #f5c400; /* Kolor RAL 1023 */
     text-align: center;
     padding: 40px 20px;
     color: black;
@@ -78,6 +80,11 @@ header .logo {
     margin-bottom: 20px;
 }
 
+.contact p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
 /* Media społecznościowe */
 .socials {
     background-color: #333;
@@ -92,6 +99,7 @@ header .logo {
     margin-bottom: 20px;
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.6);
+    color: white;
 }
 
 .social-links a {
