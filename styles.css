@@ -16,7 +16,7 @@ body {
     color: #333;
 }
 
-/* Nagłówek z logo */
+/* Nagłówek */
 header {
     background-color: #222;
     padding: 20px;
@@ -40,6 +40,22 @@ header .logo {
     font-size: 22px;
     font-weight: bold;
     margin: 10px 0;
+}
+
+/* Przycisk do galerii */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f5c400;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #e6b300;
 }
 
 /* Galeria */
