@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <!-- Nagłówek -->
     <header>
         <img src="logo.png" alt="RFactory" class="logo">
@@ -19,18 +20,21 @@
         <h2>• Warsztat tuningowy</h2>
         <h2>• Lakiernictwo / renowacje</h2>
         <!-- Przycisk do galerii -->
-        <a href="gallery.html" class="button">Zobacz Galerię</a>
+        <a href="#" class="button" id="open-gallery">Zobacz Galerię</a>
     </section>
 
-    <!-- Galeria (Zaktualizowana sekcja) -->
-    <section class="gallery">
-        <h2>Galeria</h2>
-        <div class="gallery-images">
-            <img src="image1.jpg" alt="Zdjęcie 1">
-            <img src="image2.jpg" alt="Zdjęcie 2">
-            <img src="image3.jpg" alt="Zdjęcie 3">
+    <!-- Modal z galerią -->
+    <div id="galleryModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Galeria</h2>
+            <div class="gallery-images">
+                <img src="image1.jpg" alt="Zdjęcie 1">
+                <img src="image2.jpg" alt="Zdjęcie 2">
+                <img src="image3.jpg" alt="Zdjęcie 3">
+            </div>
         </div>
-    </section>
+    </div>
 
     <!-- Kontakt -->
     <section class="contact">
@@ -62,5 +66,27 @@
     <footer>
         <p>© 2024 RFactory. Wszystkie prawa zastrzeżone.</p>
     </footer>
+
+    <script>
+        // Skrypt do otwierania i zamykania modalu
+        var modal = document.getElementById("galleryModal");
+        var btn = document.getElementById("open-gallery");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
 </body>
 </html>
