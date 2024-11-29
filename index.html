@@ -3,137 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RFactory</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header img {
-            max-width: 300px; /* Powiększono logo */
-            margin-bottom: 10px;
-        }
-
-        header h1 {
-            font-size: 1.2rem; /* Zmniejszono rozmiar tekstu */
-            margin: 0;
-            line-height: 1.5;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        .info {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .gallery img {
-            width: 300px;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .social {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .social a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #333;
-            font-size: 20px;
-        }
-
-        .social a img {
-            width: 30px;
-            height: 30px;
-        }
-
-        .map {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        iframe {
-            width: 100%;
-            max-width: 600px;
-            height: 400px;
-            border: 0;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>RFactory - Sklep, Mieszalnia, Warsztat</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Logo na górze -->
     <header>
-        <img src="logo.png" alt="Logo RFactory">
-        <h1>
-            • Sklep z art. lakierniczymi<br>
-            • Mieszalnia lakierów<br>
-            • Warsztat tuningowy<br>
-            • Lakiernictwo / renowacje
-        </h1>
+        <img src="logo.png" alt="RFactory" class="logo">
     </header>
-    <main>
-        <div class="info">
-            <h2>Kontakt</h2>
-            <p><strong>Telefon:</strong> +48 607 713 670</p>
-            <p><strong>Adres:</strong> Powroźnik 87D 33-370 Muszyna</p>
-        </div>
+    
+    <!-- Sekcja z napisem i kolorem RAL 1023 -->
+    <section class="intro">
+        <h2>• Sklep z art. lakierniczymi</h2>
+        <h2>• Mieszalnia lakierów</h2>
+        <h2>• Warsztat tuningowy</h2>
+        <h2>• Lakiernictwo / renowacje</h2>
+    </section>
 
-        <div class="gallery">
-            <img src="zdjecie1.jpg" alt="Zdjęcie 1">
-            <img src="zdjecie2.jpg" alt="Zdjęcie 2">
-            <img src="zdjecie3.jpg" alt="Zdjęcie 3">
+    <!-- Galeria -->
+    <section class="gallery">
+        <h2>Nasza Galeria</h2>
+        <div class="gallery-images">
+            <img src="image1.jpg" alt="Zdjęcie 1">
+            <img src="image2.jpg" alt="Zdjęcie 2">
+            <img src="image3.jpg" alt="Zdjęcie 3">
+            <img src="image4.jpg" alt="Zdjęcie 4">
+            <img src="image5.jpg" alt="Zdjęcie 5">
+            <img src="image6.jpg" alt="Zdjęcie 6">
         </div>
+    </section>
 
-        <div class="social">
-            <h3>Znajdź nas w mediach społecznościowych:</h3>
-            <a href="https://www.facebook.com/profile.php?id=100064147600238" target="_blank">
-                <img src="facebook.png" alt="Facebook">
-            </a>
-            <a href="https://www.instagram.com/rfactory.pl?igsh=MTZodGxoMG5nOTF2bw==" target="_blank">
-                <img src="instagram.png" alt="Instagram">
-            </a>
-        </div>
+    <!-- Kontakt -->
+    <section class="contact">
+        <h2>Kontakt</h2>
+        <p><strong>Telefon:</strong> +48 607 713 670</p>
+        <p><strong>Adres:</strong> Powróżnik 87D, 33-370 Muszyna</p>
+    </section>
 
-        <div class="map">
-            <h3>Znajdź nas na mapie:</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2598.252291598634!2d20.969096!3d49.366299!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e77b2a1c94e81%3A0xac816e91ad19a27!2sR%20Factory!5e0!3m2!1spl!2spl!4v1732908725932!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </main>
-    <footer>
-        &copy; 2024 RFactory. Wszystkie prawa zastrzeżone.
-    </footer>
-</body>
-</html>
+    <!-- Media społecznościowe -->
+    <section class="socials">
+        <h2>Znajdź nas w mediach społecznościowych:</h2>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100064147600238" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/rfactory.pl" target="_blank">Instagram</
